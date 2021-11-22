@@ -1,4 +1,5 @@
 from django import forms
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView, DeleteView
@@ -69,9 +70,13 @@ def search(request):
         if keyword_prefecture == '':
             results = Result.objects.filter(fish_name=keyword_fish_name).values(
                 'fish_name','image','trip_id','created_at','trip__title','trip__prefecture','trip__user__username','trip__user__id')
+            for result in results:
+                result['image_url'] = f"{settings.MEDIA_IMAGE_URL}/{result['image']}"
         else:
             results = Result.objects.filter(fish_name=keyword_fish_name).filter(trip__prefecture=keyword_prefecture).values(
                 'fish_name','image','trip_id','created_at','trip__title','trip__prefecture','trip__user__username','trip__user__id')
+            for result in results:
+                result['image_url'] = f"{settings.MEDIA_IMAGE_URL}/{result['image']}"
         result_list = list(results.values_list('created_at__month',flat=True))
         x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         y = []
