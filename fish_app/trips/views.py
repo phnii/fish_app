@@ -62,6 +62,59 @@ def make_inline_formset(request):
     return render(request, 'trips/create.html',{'formset':formset,'trip_form':TripForm()})
 
 
+@login_required
+def update_inline_formset(request,pk):
+    if not request.user.id == Trip.objects.get(id=pk).user_id:
+        return redirect(to='/trips/index')
+    
+    ResultFormSet = forms.inlineformset_factory(
+        parent_model=Trip,
+        model=Result,
+        fields=('fish_name','image'),
+        extra=1,
+        can_delete=False,
+        widgets={'image':forms.FileInput(attrs={'class':'form-control-file'}),
+                 'fish_name':forms.TextInput(attrs={'placeholder':'全角カナ'})
+        }
+    )
+    if request.method == 'POST':
+        trip = Trip.objects.get(id=pk)
+        trip.title = request.POST['title']
+        trip.prefecture = request.POST['prefecture']
+        trip.content = request.POST['content']
+        trip.user = request.user
+
+        formset = ResultFormSet(
+            data=request.POST,
+            files=request.FILES,
+            instance=trip,
+            queryset=Result.objects.none(),
+        )
+
+        if formset.is_valid():
+            trip.save()
+            formset.save()
+            result_ids = request.POST.getlist('delete')
+            Result.objects.filter(pk__in=result_ids).delete()
+            return redirect(to='trip_detail', pk=trip.id)
+        else:
+            return render(request, 'trips/update.html',{'formset':formset,'trip_form':TripForm(request.POST)})
+    else:
+        formset = ResultFormSet(
+            instance=Trip.objects.get(id=pk),
+            queryset=Result.objects.none(),
+        )
+    results = Result.objects.filter(trip__id=pk)
+    return render(request, 'trips/update.html',{'results':results,'pk':pk,'formset':formset,'trip_form':TripForm(instance=Trip.objects.get(id=pk),initial={'prefecture':Trip.objects.get(id=pk).prefecture})})
+
+
+
+
+
+
+
+
+
 def search(request):
     if (request.method == 'POST'):
         form = TripFindForm(request.POST)
@@ -119,50 +172,6 @@ class TripDetailView(FormMixin, DetailView):
         return super().form_valid(form)
 
 
-@login_required
-def update_inline_formset(request,pk):
-    if not request.user.id == Trip.objects.get(id=pk).user_id:
-        return redirect(to='/trips/index')
-    
-    ResultFormSet = forms.inlineformset_factory(
-        parent_model=Trip,
-        model=Result,
-        fields=('fish_name','image'),
-        extra=1,
-        can_delete=False,
-        widgets={'image':forms.FileInput(attrs={'class':'form-control-file'}),
-                 'fish_name':forms.TextInput(attrs={'placeholder':'全角カナ'})
-        }
-    )
-    if request.method == 'POST':
-        trip = Trip.objects.get(id=pk)
-        trip.title = request.POST['title']
-        trip.prefecture = request.POST['prefecture']
-        trip.content = request.POST['content']
-        trip.user = request.user
-
-        formset = ResultFormSet(
-            data=request.POST,
-            files=request.FILES,
-            instance=trip,
-            queryset=Result.objects.none(),
-        )
-
-        if formset.is_valid():
-            trip.save()
-            formset.save()
-            result_ids = request.POST.getlist('delete')
-            Result.objects.filter(pk__in=result_ids).delete()
-            return redirect(to='trip_detail', pk=trip.id)
-        else:
-            return render(request, 'trips/update.html',{'formset':formset,'trip_form':TripForm(request.POST)})
-    else:
-        formset = ResultFormSet(
-            instance=Trip.objects.get(id=pk),
-            queryset=Result.objects.none(),
-        )
-    results = Result.objects.filter(trip__id=pk)
-    return render(request, 'trips/update.html',{'results':results,'pk':pk,'formset':formset,'trip_form':TripForm(instance=Trip.objects.get(id=pk),initial={'prefecture':Trip.objects.get(id=pk).prefecture})})
 
 
 class UserTripsView(ListView):

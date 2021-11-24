@@ -3,6 +3,7 @@ ENV PYTHONUNBUFFERED=1
 RUN mkdir app
 WORKDIR /app
 COPY requirements.txt /app/
+# COPY static/ /app/static/
 
 RUN pip install -r requirements.txt
 

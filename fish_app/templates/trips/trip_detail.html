@@ -58,8 +58,8 @@
       {% for comment in trip.comment_set.all %}
       <div class="comment border-top">
         <div class="comment-header d-flex">
-          <p>{{comment.user.username}}</p>
-          <p class="ml-auto">{{comment.created_at}}</p>
+          <a href="{% url 'user_trips' comment.user.id %}" class="text-body">{{comment.user.username}}</a>
+          <p class="ml-auto">{{comment.created_at.date}}</p>
         </div>
         <div class="comment-body">
           {{comment.content | linebreaksbr}}
