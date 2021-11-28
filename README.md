@@ -7,16 +7,6 @@
 投稿できる内容は釣り日記タイトル、本文、場所、釣れた魚名とその画像です。  
 季節や地域によって釣れる魚も変わるため、新鮮な情報をネット上で共有することでターゲット決めなどに役立てることができます。
 
-### 使用した技術
-Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS, S3, RDS)
-
-### URL
-http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
-
-### テスト用アカウント
-メールアドレス: guest@guest.com  
-パスワード: guestpass123
-
 ### 利用方法
 ログインすることで新規投稿ページから釣り日記の投稿ができるようになります。。
 送信した投稿はトップページの投稿一覧ページやマイページや投稿詳細ページから見ることができます。
@@ -32,13 +22,23 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 個人で取り組むことが多い趣味であるため釣り人同士の情報交換の機会はあまり多くありません。  
 他のユーザーの投稿を閲覧するだけでなくコメント欄を活用することでより情報交換などしやすくしました。  
 
+### 使用した技術
+Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS, S3, RDS)
+
 ### インフラ構成図
 ![fargate4](https://user-images.githubusercontent.com/89190802/143770200-60591580-2cab-476e-a1e4-94a0491f3689.png) 
+
+### URL
+http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
+
+### テスト用アカウント
+メールアドレス: guest@guest.com  
+パスワード: guestpass123
 
 ### 実装した機能のGIF
 - トップページ  
 投稿が新着順に表示されます。  
-見やすさのために写真は一枚だけ、文字数は先頭の60字まで表示されます。  
+見やすさのために写真は一枚だけ、文字数は先頭の65字まで表示されます。  
 ページネーション機能を加えて1ページにつき6件まで表示されます。
 ![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)
 ---
