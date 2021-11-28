@@ -38,10 +38,11 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ### 実装した機能のGIF
 - トップページ  
+![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)  
 投稿が新着順に表示されます。  
 見やすさのために写真は一枚だけ、文字数は先頭の65字まで表示されます。  
 ページネーション機能を加えて1ページにつき6件まで表示されます。
-![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)
+
 ---
 
 - 投稿詳細ページ  
@@ -50,14 +51,14 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ---
 
-- 新規投稿ページ
+- 新規投稿ページ  
 ![新規投稿](https://user-images.githubusercontent.com/89190802/143769900-101929a0-addc-43d8-8820-8bebb18706ad.gif)
 フォームを埋めるだけで釣り日記を作成できます。  
 釣れた魚の数に応じて釣果のフォームをAddボタンとDeleteボタンで増減できます。
 
 ---
 
-- 投稿編集ページ
+- 投稿編集ページ  
 <img width="1440" alt="投稿編集" src="https://user-images.githubusercontent.com/89190802/143769946-580ace54-ce2e-4639-a30e-5e2f47332c77.png">
 フォームには投稿済みの情報が既に書き込まれた状態で表示されます。  
 記入内容を書き換えた上で送信することで投稿の編集ができます。
@@ -65,7 +66,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 
-- 投稿検索ページ
+- 投稿検索ページ  
 <img width="1439" alt="検索" src="https://user-images.githubusercontent.com/89190802/143770050-b1f6bad7-272c-404c-a021-3ff82b8d89cc.png">
 魚名と場所(都道府県)を指定して釣果を検索することができます。  
 条件にヒットする投稿の数を月別でグラフに表示します。季節による釣れ方の違いが分かりやすくなります。
