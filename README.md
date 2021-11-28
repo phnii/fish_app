@@ -33,7 +33,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 他のユーザーの投稿を閲覧するだけでなくコメント欄を活用することでより情報交換などしやすくしました。  
 
 ### インフラ構成図
-![](/Users/tk/Desktop/fish_app_diagram.png)  
+![fargate4](https://user-images.githubusercontent.com/89190802/143770200-60591580-2cab-476e-a1e4-94a0491f3689.png) 
 
 ### 実装した機能のGIF
 - トップページ  
@@ -65,27 +65,28 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 
 - 投稿検索ページ
-![](/Users/tk/Desktop/fish画像/検索.png)
-魚名と場所(都道府県)を指定して釣果を検索することができます。条件にヒットする投稿の数を月別でグラフに表示します。季節による釣れ方の違いが分かりやすくなります。
+<img width="1439" alt="検索" src="https://user-images.githubusercontent.com/89190802/143770050-b1f6bad7-272c-404c-a021-3ff82b8d89cc.png">
+魚名と場所(都道府県)を指定して釣果を検索することができます。  
+条件にヒットする投稿の数を月別でグラフに表示します。季節による釣れ方の違いが分かりやすくなります。
 
 ---
 
 - マイページ
-![](/Users/tk/Desktop/fish画像/マイページ.jpeg)
+![マイページ](https://user-images.githubusercontent.com/89190802/143770073-e1ab2c28-c3d7-4bc6-9999-0c300726b963.jpeg)
 ユーザーの投稿履歴と自己紹介文が表示されます。
 
 ---
 
 - ログイン
-![](/Users/tk/Desktop/fish画像/ログイン.png)
+<img width="1440" alt="ログイン" src="https://user-images.githubusercontent.com/89190802/143770075-415a1a8e-7a2b-4055-a3bd-99450252a531.png">
 メールアドレスとパスワードでログインできます。
 
 - 新規登録
-![](/Users/tk/Desktop/fish画像/新規登録.png)
+<img width="1439" alt="新規登録" src="https://user-images.githubusercontent.com/89190802/143770102-26856eb8-c75d-4d80-9320-edabac9437d2.png">
 新規のユーザー登録ページです。
 
 - ユーザー編集ページ
-![](/Users/tk/Desktop/fish画像/ユーザー編集.png)
+<img width="1440" alt="ユーザー編集" src="https://user-images.githubusercontent.com/89190802/143770110-26d9828a-1d51-4159-be97-8bc01f495166.png">
 ユーザー名と自己紹介文を編集できます。
 
 
@@ -93,8 +94,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ユーザー間での交流の促進のためにユーザーフォロー機能と相互フォローでダイレクトメッセージを送れる機能をつける予定です。
 
 ### ER図
-- マイページ
-![](/Users/tk/Desktop/fish画像/fish-app-er.png)  
+![fish-app-er](https://user-images.githubusercontent.com/89190802/143770159-a71fde05-345d-4af5-96d0-cd73cf2c0ab6.png) 
 
 ### ローカルでの動作方法
 このソースコードは本番用で画像の送信先をS3に設定しているためgit clone後にAWSの設定が必要になります。それでは不便なためS3を使わないローカル用のコードを用意しました。以下でローカル用のコードを使った動作確認の方法を案内します。  
