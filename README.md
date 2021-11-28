@@ -38,6 +38,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ### 実装した機能のGIF
 - トップページ  
+
 ![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)  
 投稿が新着順に表示されます。  
 見やすさのために写真は一枚だけ、文字数は先頭の65字まで表示されます。  
@@ -46,12 +47,14 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 - 投稿詳細ページ  
+
 ![投稿詳細](https://user-images.githubusercontent.com/89190802/143769871-199df0f3-d7ee-4a65-b8fc-f25cbdd78121.gif)
 トップページでは省略されていた画像や本文も全て表示します。  ログイン中のユーザーはコメントの投稿と削除をすることができます。
 
 ---
 
 - 新規投稿ページ  
+
 ![新規投稿](https://user-images.githubusercontent.com/89190802/143769900-101929a0-addc-43d8-8820-8bebb18706ad.gif)
 フォームを埋めるだけで釣り日記を作成できます。  
 釣れた魚の数に応じて釣果のフォームをAddボタンとDeleteボタンで増減できます。
@@ -59,6 +62,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 - 投稿編集ページ  
+
 <img width="1440" alt="投稿編集" src="https://user-images.githubusercontent.com/89190802/143769946-580ace54-ce2e-4639-a30e-5e2f47332c77.png">
 フォームには投稿済みの情報が既に書き込まれた状態で表示されます。  
 記入内容を書き換えた上で送信することで投稿の編集ができます。
@@ -67,6 +71,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 
 - 投稿検索ページ  
+
 <img width="1439" alt="検索" src="https://user-images.githubusercontent.com/89190802/143770050-b1f6bad7-272c-404c-a021-3ff82b8d89cc.png">
 魚名と場所(都道府県)を指定して釣果を検索することができます。  
 条件にヒットする投稿の数を月別でグラフに表示します。季節による釣れ方の違いが分かりやすくなります。
@@ -74,24 +79,28 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 - マイページ  
+
 ![マイページ](https://user-images.githubusercontent.com/89190802/143770073-e1ab2c28-c3d7-4bc6-9999-0c300726b963.jpeg)
 ユーザーの投稿履歴と自己紹介文が表示されます。
 
 ---
 
-- ログイン
+- ログイン  
+
 <img width="1440" alt="ログイン" src="https://user-images.githubusercontent.com/89190802/143770075-415a1a8e-7a2b-4055-a3bd-99450252a531.png">
 メールアドレスとパスワードでログインできます。  
 
 ---
 
-- 新規登録
+- 新規登録  
+
 <img width="1439" alt="新規登録" src="https://user-images.githubusercontent.com/89190802/143770102-26856eb8-c75d-4d80-9320-edabac9437d2.png">
 新規のユーザー登録ページです。  
 
 ---
 
-- ユーザー編集ページ
+- ユーザー編集ページ  
+
 <img width="1440" alt="ユーザー編集" src="https://user-images.githubusercontent.com/89190802/143770110-26d9828a-1d51-4159-be97-8bc01f495166.png">
 ユーザー名と自己紹介文を編集できます。  
 
