@@ -37,11 +37,10 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ### 実装した機能のGIF
 - トップページ  
-![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)
 投稿が新着順に表示されます。  
 見やすさのために写真は一枚だけ、文字数は先頭の60字まで表示されます。  
 ページネーション機能を加えて1ページにつき6件まで表示されます。
-
+![投稿一覧](https://user-images.githubusercontent.com/89190802/143769701-44ade03b-8b7f-4f4c-8b8b-c6df6300fc4b.jpeg)
 ---
 
 - 投稿詳細ページ  
