@@ -72,7 +72,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ---
 
-- マイページ
+- マイページ  
 ![マイページ](https://user-images.githubusercontent.com/89190802/143770073-e1ab2c28-c3d7-4bc6-9999-0c300726b963.jpeg)
 ユーザーの投稿履歴と自己紹介文が表示されます。
 
