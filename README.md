@@ -80,15 +80,21 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 - ログイン
 <img width="1440" alt="ログイン" src="https://user-images.githubusercontent.com/89190802/143770075-415a1a8e-7a2b-4055-a3bd-99450252a531.png">
-メールアドレスとパスワードでログインできます。
+メールアドレスとパスワードでログインできます。  
+
+---
 
 - 新規登録
 <img width="1439" alt="新規登録" src="https://user-images.githubusercontent.com/89190802/143770102-26856eb8-c75d-4d80-9320-edabac9437d2.png">
-新規のユーザー登録ページです。
+新規のユーザー登録ページです。  
+
+---
 
 - ユーザー編集ページ
 <img width="1440" alt="ユーザー編集" src="https://user-images.githubusercontent.com/89190802/143770110-26d9828a-1d51-4159-be97-8bc01f495166.png">
-ユーザー名と自己紹介文を編集できます。
+ユーザー名と自己紹介文を編集できます。  
+
+---
 
 
 ### 実装予定の機能
