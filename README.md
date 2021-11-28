@@ -44,7 +44,8 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 - 投稿詳細ページ  
-![](/Users/tk/Desktop/fish画像/投稿詳細.gif)  
+![](https://user-images.githubusercontent.com/89190802/143769817-acbc6ad8-0a48-41e6-90ac-aab9aa17424d.mp4
+)  
 トップページでは省略されていた画像や本文も全て表示します。  ログイン中のユーザーはコメントの投稿と削除をすることができます。
 
 ---
