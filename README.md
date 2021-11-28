@@ -44,20 +44,20 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ---
 
 - 投稿詳細ページ  
-![](https://user-images.githubusercontent.com/89190802/143769817-acbc6ad8-0a48-41e6-90ac-aab9aa17424d.mp4)  
+![投稿詳細](https://user-images.githubusercontent.com/89190802/143769871-199df0f3-d7ee-4a65-b8fc-f25cbdd78121.gif)
 トップページでは省略されていた画像や本文も全て表示します。  ログイン中のユーザーはコメントの投稿と削除をすることができます。
 
 ---
 
 - 新規投稿ページ
-![](/Users/tk/Desktop/fish画像/新規投稿.gif)  
+![新規投稿](https://user-images.githubusercontent.com/89190802/143769900-101929a0-addc-43d8-8820-8bebb18706ad.gif)
 フォームを埋めるだけで釣り日記を作成できます。  
 釣れた魚の数に応じて釣果のフォームをAddボタンとDeleteボタンで増減できます。
 
 ---
 
 - 投稿編集ページ
-![](/Users/tk/Desktop/fish画像/投稿編集.png)
+<img width="1440" alt="投稿編集" src="https://user-images.githubusercontent.com/89190802/143769946-580ace54-ce2e-4639-a30e-5e2f47332c77.png">
 フォームには投稿済みの情報が既に書き込まれた状態で表示されます。  
 記入内容を書き換えた上で送信することで投稿の編集ができます。
 
