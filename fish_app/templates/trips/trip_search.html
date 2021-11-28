@@ -27,7 +27,7 @@
       <div class="username ml-auto">投稿者：<a href="{% url 'user_trips' result.trip__user__id %}" class="text-body">{{result.trip__user__username}}</a></div>
     </div>
     <div class="fish-image">
-      <img src="{{result.image_url}}" width=350 height="auto " alt="" class="d-block mx-auto">
+      <a href="{{result.image_url}}"><img src="{{result.image_url}}" width=100% height="auto" alt="" class="d-block mx-auto"></a>
     </div>
   </div>
   {% endfor %}

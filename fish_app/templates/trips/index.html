@@ -22,7 +22,7 @@
     </div>
     <div class="image-container">
       {% if trip.result_set.first.image %}
-      <img src="{{trip.result_set.first.image.url}}" alt="" width=300 height=auto>
+      <a href="{{trip.result_set.first.image.url}}"><img src="{{trip.result_set.first.image.url}}" alt="" width=80% height=auto></a>
       {% endif %}
     </div>
   </div>

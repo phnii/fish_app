@@ -36,7 +36,7 @@
         <div class="fish-image">
           {% for result in trip.result_set.all %}
           {% if result.image %}
-          <img src="{{result.image.url}}" width="300" height="300" class="mr-2">
+          <a href="{{result.image.url}}"><img src="{{result.image.url}}" width=30% height="300" class="mr-2"></a>
           {% endif %}
           {% endfor %}
         </div>
