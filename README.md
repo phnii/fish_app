@@ -25,15 +25,16 @@
 ### 使用した技術
 Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS, S3, RDS)
 
-### インフラ構成図
-![fargate4](https://user-images.githubusercontent.com/89190802/143770200-60591580-2cab-476e-a1e4-94a0491f3689.png) 
-
 ### URL
 http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ### テスト用アカウント
 メールアドレス: guest@guest.com  
 パスワード: guestpass123
+
+
+### インフラ構成図
+![fargate4](https://user-images.githubusercontent.com/89190802/143770200-60591580-2cab-476e-a1e4-94a0491f3689.png) 
 
 ### 実装した機能のGIF
 - トップページ  
