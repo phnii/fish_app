@@ -115,6 +115,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 ### ローカルでの動作方法
 このソースコードは本番用で画像の送信先をS3に設定しているためgit clone後にAWSの設定が必要になります。それでは不便なためS3を使わないローカル用のコードを用意しました。以下でローカル用のコードを使った動作確認の方法を案内します。  
+ローカル用リポジトリ: https://github.com/phnii/fish_app_for_local
 
 ローカル用のリポジトリからgit cloneします。
 ```
