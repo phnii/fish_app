@@ -135,7 +135,7 @@ docker-compose exec app python manage.py migrate
 ```
 ブラウザからlocalhost/trips/indexにアクセスすることでトップページにアクセスできます。  
 新規ユーザー作成時のメールアドレスはダミーのもので構いません。  
-動作を確認終了したらコンテナを終了後クローンしたディレクトリ、イメージ(fish_app_for_local_nginx, fish_app_for_local_app)、ボリューム(fish_app_for_local_tmp-data)を削除してください。
+動作確認を終了したらコンテナを終了後クローンしたディレクトリ、イメージ(fish_app_for_local_nginx, fish_app_for_local_app)、ボリューム(fish_app_for_local_tmp-data)を削除してください。
 
   
   
