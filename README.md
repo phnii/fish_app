@@ -87,7 +87,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 - フォローリストページ  
 
-![フォローリスト](https://user-images.githubusercontent.com/89190802/145307802-e829b9ef-faa2-491a-ac82-2b267f2804a0.mp4)
+![フォローリスト](https://user-images.githubusercontent.com/89190802/145308560-d7d8b888-d426-4536-bc1d-d12b32c7583a.gif)
 ユーザーのフォロー状況が表示されます。ログイン状態でフォローすることができます。  
 相互フォロー状態でメッセージボタンが表示されます。
 
