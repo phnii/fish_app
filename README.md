@@ -20,7 +20,7 @@
 
 - 全てのユーザーに対して  
 個人で取り組むことが多い趣味であるため釣り人同士の情報交換の機会はあまり多くありません。  
-他のユーザーの投稿を閲覧するだけでなくコメント欄を活用することでより情報交換などしやすくしました。  
+他のユーザーの投稿を閲覧するだけでなくコメント欄やフォロー機能やメッセージ機能を活用することでより情報交換などしやすくしました。  
 
 ### 使用した技術
 Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS, S3, RDS)
@@ -120,7 +120,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 
 
 ### 実装予定の機能
-ユーザー間での交流の促進のためにユーザーフォロー機能と相互フォローでダイレクトメッセージを送れる機能をつける予定です。
+フロント面の機能の改善をしていきます。
 
 ### ER図
 ![fish_app_er](https://user-images.githubusercontent.com/89190802/145312329-b1a139b2-fa48-467b-91c2-8caa0309831c.png) 
