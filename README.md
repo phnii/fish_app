@@ -89,11 +89,15 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ユーザーのフォロー状況が表示されます。ログイン状態でフォローすることができます。  
 相互フォロー状態でメッセージボタンが表示されます。
 
+---
+
 - メッセージページ  
 
 <img width="1440" alt="fish_message" src="https://user-images.githubusercontent.com/89190802/145308086-268fe3fa-940f-428b-9527-1cc9f7a42061.png">
 相互フォロー状態でフォロワー同士でメッセージの交換ができます。　　
 少なくとも一方のフォローが外れた時はメッセージフォームは非表示になり過去の履歴の閲覧のみ可能になります。
+
+---
 
 - ログイン  
 
