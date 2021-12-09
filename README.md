@@ -123,7 +123,7 @@ http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
 ユーザー間での交流の促進のためにユーザーフォロー機能と相互フォローでダイレクトメッセージを送れる機能をつける予定です。
 
 ### ER図
-![fish-app-er](https://user-images.githubusercontent.com/89190802/143770159-a71fde05-345d-4af5-96d0-cd73cf2c0ab6.png) 
+![fish_app_er](https://user-images.githubusercontent.com/89190802/145312329-b1a139b2-fa48-467b-91c2-8caa0309831c.png) 
 
 ### ローカルでの動作方法
 このソースコードは本番用で画像の送信先をS3に設定しているためgit clone後にAWSの設定が必要になります。それでは不便なためS3を使わないローカル用のコードを用意しました。以下でローカル用のコードを使った動作確認の方法を案内します。  
