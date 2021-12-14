@@ -21,7 +21,7 @@
 他のユーザーの投稿を閲覧するだけでなくコメント欄やフォロー機能やメッセージ機能を活用することでより情報交換などしやすくしました。  
 
 ### 使用した技術
-Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS,　Fargate, S3, RDS)
+Python3 Django HTML Bootstrap4 JavaScript PostgreSQL Docker Github AWS(ECS, Fargate, S3, RDS)
 
 ### URL
 http://fish-app-ee246f6eb5b2565b.elb.ap-northeast-1.amazonaws.com/trips/index/
